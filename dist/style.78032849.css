@@ -1317,7 +1317,7 @@ nav {
 
 
 
-  #particles-js .particles-js-canvas-el {
+#particles-js .particles-js-canvas-el {
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -1332,7 +1332,6 @@ nav {
     z-index: 0;
     mix-blend-mode: overlay;
     filter: invert(100%);
-    
 }
 
 .hero {
@@ -1341,11 +1340,31 @@ nav {
     padding-top: 40px;
     height: 500px;
     background: linear-gradient(to top right, red 0,orangered 100%);
-    background: linear-gradient(to right, rgba(0,0,0,.6) 0%, rgba(0,0,0,.6)100%), url(https://images.pexels.com/photos/1376864/pexels-photo-1376864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,.6) 100%), url(https://images.pexels.com/photos/1376864/pexels-photo-1376864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-size: cover, cover;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
-    /* mix-blend-mode: darken; */
+    -webkit-transition: background-image 1.5s linear;
+	-moz-transition: background-image 1.5s linear;
+	-o-transition: background-image 1.5s linear;
+	-ms-transition: background-image 1.5s linear;
+	transition: background-image 1.5s linear;
+    /* mix-blend-mode: color-burn; */
+}
+
+.invisible {
+    filter: opacity(0);
+}
+
+.quienessomos h1, .quienessomos p {
+    text-align: left;
+}
+
+#quienessomos { 
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,.6) 100%), url(https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/36199847_10216638682659133_7684673610488741888_n.jpg?_nc_cat=102&_nc_ht=scontent-nrt1-1.xx&oh=e4a6058bc9501805291263780d5cde2a&oe=5CC1D6DF);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0, -350px;
 }
 
 .hero::before {
@@ -1369,6 +1388,7 @@ nav {
     color: #E2E8ED;
     text-align: right;
     font-size: 60px;
+    width: 100%;
 }
 
 .hero-paragraph {
@@ -1376,10 +1396,6 @@ nav {
     color: #E2E8ED;
     text-align: right;
     z-index: 2;
-}
-
-#quienessomos {
-    display: none;
 }
 
 .hero-illustration {
@@ -1420,6 +1436,7 @@ nav {
     }
     .hero-copy {
         padding-right: 48px;
+        padding-left: 48px;
         min-width: 512px;
         height: 100%;
     }
@@ -1441,7 +1458,8 @@ nav {
         width: 43%
     }
     .hero-copy {
-        padding-right: 88px;
+        padding-right: 80px;
+        padding-left: 80px;
         min-width: 552px
     }
 }
@@ -1783,7 +1801,6 @@ and (max-device-width : 568px) {
     }
     .hero {
         height: 100vh;
-        overflow: scroll;
     }
 }
 
