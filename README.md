@@ -1,2 +1,2 @@
 # molinamarketing
-Official website of Mexico—based sales agency, Molina Marketing
+Official website for Mexican sales firm, Molina Marketing.
