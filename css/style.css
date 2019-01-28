@@ -1779,10 +1779,12 @@ and (max-device-width : 568px) {
 
     .hero-title {
         text-align: center;
+        font-size: 40px;
     }
 
     .hero-paragraph {
         text-align: center;
+        font-size: 14px;
     }
 
     .site-header {
