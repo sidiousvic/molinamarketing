@@ -1367,6 +1367,12 @@ nav {
     background-size: cover;
 }
 
+.map {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
 .hero::before {
     display: none;
     content: '';
@@ -1406,7 +1412,7 @@ nav {
     /* filter: invert(100%); */
     background-size: 60%, contain;
     mix-blend-mode: overlay, normal;
-    background-position: right 70%, center;
+    background-position: right 70%, left;
     background-repeat: no-repeat;
 }
 
@@ -1436,7 +1442,7 @@ nav {
     .hero-copy {
         padding-right: 48px;
         padding-left: 48px;
-        min-width: 512px;
+        /* min-width: 512px; */
         height: 100%;
     }
 
@@ -1620,6 +1626,10 @@ nav {
 
 .pricing .section-title {
     margin-bottom: 48px
+}
+
+.section-title-margin {
+    margin-bottom: 70px;
 }
 
 .pricing-tables-wrap {
@@ -1812,6 +1822,10 @@ and (max-device-width : 568px) {
     .quienessomos h1, .quienessomos p {
         text-align: center;
     }
+
+    .section-title-margin {
+        margin-bottom: 40px;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -1842,14 +1856,45 @@ and (max-device-width : 568px) {
     }
 }
 
-@media (min-width: 641px) {
+@media (min-width: 500px) {
 
     .section-inner {
         padding-top: 80px;
         padding-bottom: 80px
     }
+
+    .hero-title {
+        text-align: right;
+        font-size: 40px;
+    }
+
+    .hero-paragraph {
+        text-align: right;
+        font-size: 15px;
+    }
+
+    .hero-copy {
+        padding-right: 48px;
+        padding-left: 48px;
+        /* min-width: 512px; */
+        height: 100%;
+    }
+
+    .hero-illustration {
+        margin-right: 0px;
+    }
+
+ 
 }
 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+    .site-header {
+        display: none;
+    }
+}
 
 
 .site-footer {
