@@ -1352,6 +1352,7 @@ nav {
     /* mix-blend-mode: color-burn; */
 }
 
+
 .invisible {
     filter: opacity(0);
 }
@@ -1802,6 +1803,14 @@ and (max-device-width : 568px) {
     }
     .hero {
         height: 100vh;
+    }
+
+    .quienessomos {
+        padding-top: 60%;
+    }
+
+    .quienessomos h1, .quienessomos p {
+        text-align: center;
     }
 }
 
