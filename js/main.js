@@ -9,7 +9,7 @@
     /* global ScrollReveal */
     const sr = window.sr = ScrollReveal()
 
-    sr.reveal('.hero-title, .hero-paragraph, .hero-cta', {
+    sr.reveal('.reveal-from-left', {
       duration: 1000,
       distance: '40px',
       easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
@@ -17,7 +17,7 @@
       interval: 150
     })
 
-    sr.reveal('.hero-illustration', {
+    sr.reveal('.reveal-from-right', {
       duration: 1000,
       distance: '40px',
       easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
@@ -25,7 +25,7 @@
       interval: 150
     })
 
-    sr.reveal('.feature', {
+    sr.reveal('.nav, .feature, .reveal-from-bottom', {
       duration: 1000,
       distance: '40px',
       easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',

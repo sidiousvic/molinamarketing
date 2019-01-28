@@ -1416,15 +1416,6 @@ nav {
     background-repeat: no-repeat;
 }
 
-.hero-illustration img,
-.hero-illustration svg {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    margin: 0 auto;
-    overflow: visible
-}
-
 @media (min-width: 641px) {
     .hero {
         text-align: left;
