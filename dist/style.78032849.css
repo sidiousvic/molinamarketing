@@ -1337,7 +1337,7 @@ nav {
 .hero {
     position: relative;
     text-align: center;
-    padding-top: 40px;
+    /* padding-top: 40px; */
     height: 500px;
     background: linear-gradient(to top right, red 0,orangered 100%);
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,.6) 100%), url(https://images.pexels.com/photos/1376864/pexels-photo-1376864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
@@ -1364,7 +1364,6 @@ nav {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,.6) 100%), url(https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/36199847_10216638682659133_7684673610488741888_n.jpg?_nc_cat=102&_nc_ht=scontent-nrt1-1.xx&oh=e4a6058bc9501805291263780d5cde2a&oe=5CC1D6DF);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: 0, -350px;
 }
 
 .hero::before {
@@ -1400,7 +1399,6 @@ nav {
 
 .hero-illustration {
     width: 100%;
-    margin-top: 40px;
     margin-right: 90px;
     padding-bottom: 40px;
     background-image: url(https://www.vicsidious.com/vicsidiouswww/molinamarketing/images/mmlogotext2.png), url(https://www.vicsidious.com/vicsidiouswww/molinamarketing/images/mlogo.png);
@@ -1781,10 +1779,12 @@ and (max-device-width : 568px) {
 
     .hero-title {
         text-align: center;
+        font-size: 40px;
     }
 
     .hero-paragraph {
         text-align: center;
+        font-size: 14px;
     }
 
     .site-header {
@@ -1798,6 +1798,7 @@ and (max-device-width : 568px) {
         background-image: url(https://www.vicsidious.com/vicsidiouswww/molinamarketing/images/mmlogotext2.png), url(https://www.vicsidious.com/vicsidiouswww/molinamarketing/images/mlogo.png);
         background-size: 60%, contain;
         background-position: center, center;
+        height: 40vh;
     }
     .hero {
         height: 100vh;
