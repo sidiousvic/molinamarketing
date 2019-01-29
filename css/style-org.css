@@ -376,7 +376,8 @@ a {
 a:hover,
 a:active {
     outline: 0;
-    text-decoration: none
+    text-decoration: none;
+    color: white;
 }
 
 h1,
@@ -496,11 +497,19 @@ h6,
 }
 
 .text-light {
-    color: #6F8394
+    color: rgb(103, 102, 117);
 }
 
 .text-light a {
-    color: #6F8394
+    color: rgb(103, 102, 117);
+}
+
+.button-left {
+    float: left;
+}
+
+.button-right {
+    float: right;
 }
 
 .text-light h1,
@@ -534,7 +543,7 @@ h1,
 h2,
 .h1,
 .h2 {
-    margin-bottom: 16px
+    margin: 16px 0;
 }
 
 h3,
@@ -587,7 +596,7 @@ blockquote p {
 }
 
 address {
-    color: #6F8394;
+    color: rgb(103, 102, 117);;
     border-width: 1px 0;
     border-style: solid;
     border-color: #E2E8ED;
@@ -935,12 +944,12 @@ nav ul li a {
     /* background-color: red; */
     display: block;
     font-size: 1.1vw;
-    padding: 1em 3em;
+    padding: 0 40px;
     text-decoration: none;
     flex-shrink: 0;
   }
 
-  .nav:hover {
+a:hover {
     color: white;
     transition: ease-in .1s;
   }
@@ -954,7 +963,7 @@ nav ul li a {
     background-image: url(https://www.vicsidious.com/molinamarketing/images/mmlogo4.png);
     background-size: contain;
     background-position: center left;
-    margin-left: 3em;
+    margin: -6px 50px;
     background-repeat: no-repeat;
     color: rgba(0, 0, 0, 0);
     width: 500px;
@@ -980,7 +989,7 @@ nav ul li a {
     /* line-height: 142px; */
     letter-spacing: -0.1px;
     font-weight: 400;
-    color: #6F8394;
+    color: rgb(103, 102, 117);;
     /* text-transform: uppercase; */
     text-decoration: none;
     line-height: 16px;
@@ -989,7 +998,7 @@ nav ul li a {
 
 .header-links a:not(.button):hover,
 .header-links a:not(.button):active {
-    color: #121212
+    color: white;
 }
 
 
@@ -1029,6 +1038,7 @@ nav ul li a {
 
 .hero-main {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,.6) 100%), url(https://images.pexels.com/photos/1376864/pexels-photo-1376864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-attachment: fixed;
     background-size: cover, cover;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
@@ -1042,6 +1052,7 @@ nav ul li a {
 
 .hero-normayrene {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,.6) 100%), url(https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/36199847_10216638682659133_7684673610488741888_n.jpg?_nc_cat=102&_nc_ht=scontent-nrt1-1.xx&oh=e4a6058bc9501805291263780d5cde2a&oe=5CC1D6DF);
+    background-attachment: fixed;
     background-size: cover, cover;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
@@ -1061,6 +1072,10 @@ nav ul li a {
 .quienessomos h1, .quienessomos p {
     text-align: left;
 }
+
+/* .tumarca h1, .tumarca p {
+    text-align: right;
+} */
 
 #quienessomos { 
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,.6) 100%), url(https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/36199847_10216638682659133_7684673610488741888_n.jpg?_nc_cat=102&_nc_ht=scontent-nrt1-1.xx&oh=e4a6058bc9501805291263780d5cde2a&oe=5CC1D6DF);
@@ -1108,14 +1123,14 @@ nav ul li a {
 .hero-illustration {
     width: 100%;
     min-height: 300px;
-    min-width: 300px;
+    min-width: 280px;
     margin-right: 90px;
     padding-bottom: 40px;
     background-image: url(https://www.vicsidious.com/molinamarketing/images/mmlogotext2.png), url(https://www.vicsidious.com/molinamarketing/images/mlogo.png);
     /* filter: invert(100%); */
     background-size: 60%, contain;
     mix-blend-mode: overlay, normal;
-    background-position: right 70%, left;
+    background-position: right 70%, center;
     background-repeat: no-repeat;
 }
 
@@ -1125,8 +1140,8 @@ nav ul li a {
 
     .hero {
         text-align: center;
-        padding-top: 92px;
-        padding-bottom: 80px
+        padding-top: 90px;
+        padding-bottom: 90px
     }
     .hero::before {
         left: 620px;
@@ -1175,7 +1190,7 @@ nav ul li a {
 }
 
 .features .section-title {
-    margin-bottom: 48px
+    /* margin-bottom: 48px */
 }
 
 .features-wrap {
@@ -1195,7 +1210,7 @@ nav ul li a {
 }
 
 .feature {
-    padding: 12px;
+    padding: 30px;
     width: 276px;
     max-width: 276px;
     flex-grow: 1
@@ -1203,6 +1218,8 @@ nav ul li a {
 
 .feature-inner {
     height: 100%;
+    margin: auto;
+    width: 100%;
     background: rgba(0, 0, 0, 0.0);
     padding: 40px 24px;
     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.0);;
@@ -1300,7 +1317,7 @@ nav ul li a {
         background: #121212
     }
     .features .section-title {
-        margin-bottom: 56px
+        /* margin-bottom: 56px */
     }
 }
 
@@ -1324,11 +1341,11 @@ nav ul li a {
 }
 
 .pricing .section-title {
-    margin-bottom: 48px
+    /* margin-bottom: 48px */
 }
 
-.section-title-margin {
-    margin-bottom: 70px;
+.section-title-padding {
+    padding: 70px 0;
 }
 
 .pricing-tables-wrap {
@@ -1438,8 +1455,12 @@ nav ul li a {
         background: #F6F8FA
     }
     .pricing .section-title {
-        margin-bottom: 64px
+        /* margin-bottom: 64px */
     }
+}
+
+.section-title {
+    margin: 10px 0;
 }
 
 .is-boxed {
@@ -1471,14 +1492,19 @@ nav ul li a {
 
 main {
     flex: 1 0 auto;
-    background: linear-gradient(to top right, white 0, whitesmoke 100%);
+    background: linear-gradient(to top right, white 0, rgb(235, 235, 235) 100%);
 }
 
 .section-inner {
     position: relative;
-    padding-top: 35px;
-    padding-bottom: 48px
+    padding: 70px 0;
 }
+
+.section-inner-map {
+    position: relative;
+    padding: 0;
+}
+
 
 @media only screen 
 and (min-device-width : 0px) 
@@ -1522,7 +1548,7 @@ and (max-device-width : 568px) {
         text-align: center;
     }
 
-    .section-title-margin {
+    /* .section-title-margin { */
         margin-bottom: 40px;
     }
 }
@@ -1561,7 +1587,7 @@ and (max-device-width : 568px) {
     }
     .section-inner {
         /* padding-top: 80px; */
-        padding-bottom: 80px
+        padding: 70px 0;
     }
 
     .hero-title {
@@ -1579,7 +1605,6 @@ and (max-device-width : 568px) {
         padding-left: 48px;
         /* min-width: 512px; */
         height: 100%;
-        margin: 30px;
     }
 
     .hero-illustration {
@@ -1600,7 +1625,8 @@ and (max-device-width : 1024px) {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0px;
-    background: #121212
+    background: linear-gradient(to top right, #121212 0, black 100%);
+
 }
 
 .site-footer a {
@@ -1609,8 +1635,8 @@ and (max-device-width : 1024px) {
 
 .site-footer a:hover,
 .site-footer a:active {
-    color: #6F8394;
-    text-decoration: underline
+    color: white;
+    text-decoration: none;
 }
 
 .site-footer-inner {
