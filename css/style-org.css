@@ -230,7 +230,7 @@ template {
 }
 
 [hidden] {
-    display: none
+    display: none 
 }
 
 html {
@@ -557,7 +557,7 @@ p {
     margin-top: 0;
     margin-bottom: 24px;
     color: black;
-    text-align: right;
+    text-align: center;
 }
 
 dfn,
@@ -808,7 +808,6 @@ label {
     cursor: pointer;
     justify-content: center;
     padding: 16px 32px;
-    width: 200px;
     text-align: center;
     white-space: nowrap;
     z-index: 2;
@@ -893,8 +892,7 @@ label {
 
 .site-header {
     position: relative;
-    padding: 20px 0;
-    height: 200px;
+    padding: 20px 0 50px;
     background: linear-gradient(to top right, #121212 0, black 100%);
 }
 
@@ -928,17 +926,21 @@ nav ul li {
     list-style-type: none;
   }
 
-  nav ul li a {
+nav ul li a {
+    text-decoration: none;
+  }
+
+.nav-link {
     color: rgb(103, 102, 117);
     /* background-color: red; */
     display: block;
-    font-size: 15px;
+    font-size: 1.1vw;
     padding: 1em 3em;
     text-decoration: none;
     flex-shrink: 0;
   }
 
-  nav ul li a:hover {
+  .nav:hover {
     color: white;
     transition: ease-in .1s;
   }
@@ -946,17 +948,23 @@ nav ul li {
   nav ul li:first-child {
     /* margin-right: auto; */
     flex: 1;
-    color: #000000;
   }
 
 .logo {
-    background-image: url(https://www.vicsidious.com/vicsidiouswww/molinamarketing/images/mmlogo4.png);
+    background-image: url(https://www.vicsidious.com/molinamarketing/images/mmlogo4.png);
     background-size: contain;
     background-position: center left;
     margin-left: 3em;
     background-repeat: no-repeat;
     color: rgba(0, 0, 0, 0);
+    width: 500px;
+    background-size: contain;
 }
+
+.logo:hover {
+    color: rgba(0, 0, 0, 0);
+}
+
 
 .header-links {
     display: inline-flex;
@@ -969,7 +977,6 @@ nav ul li {
 
 .header-links a:not(.button) {
     font-family: "Myriad Pro", sans-serif;
-    font-size: 16px;
     /* line-height: 142px; */
     letter-spacing: -0.1px;
     font-weight: 400;
@@ -1008,7 +1015,6 @@ nav ul li {
     position: relative;
     text-align: center;
     padding: 20px;
-    height: 500px;
     background: linear-gradient(to top right, red 0,orangered 100%);
     background-size: cover, cover;
     background-position: center, center;
@@ -1101,9 +1107,11 @@ nav ul li {
 
 .hero-illustration {
     width: 100%;
+    min-height: 300px;
+    min-width: 300px;
     margin-right: 90px;
     padding-bottom: 40px;
-    background-image: url(https://www.vicsidious.com/vicsidiouswww/molinamarketing/images/mmlogotext2.png), url(https://www.vicsidious.com/vicsidiouswww/molinamarketing/images/mlogo.png);
+    background-image: url(https://www.vicsidious.com/molinamarketing/images/mmlogotext2.png), url(https://www.vicsidious.com/molinamarketing/images/mlogo.png);
     /* filter: invert(100%); */
     background-size: 60%, contain;
     mix-blend-mode: overlay, normal;
@@ -1112,8 +1120,11 @@ nav ul li {
 }
 
 @media (min-width: 641px) {
+
+
+
     .hero {
-        text-align: left;
+        text-align: center;
         padding-top: 92px;
         padding-bottom: 80px
     }
@@ -1198,7 +1209,7 @@ nav ul li {
 }
 
 #feature-hubbell {
-    background-image: url(https://www.vicsidious.com/vicsidiouswww/molinamarketing/images/hubbell.png);
+    background-image: url(https://www.vicsidious.com/molinamarketing/images/hubbell.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -1235,7 +1246,7 @@ nav ul li {
 }
 
 #feature-killark {
-    background-image: url(https://www.vicsidious.com/vicsidiouswww/molinamarketing/images/killark.jpg);
+    background-image: url(https://www.vicsidious.com/molinamarketing/images/killark.jpg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -1243,14 +1254,14 @@ nav ul li {
 }
 
 #feature-raco {
-    background-image: url(https://www.vicsidious.com/vicsidiouswww/molinamarketing/images/raco.png);
+    background-image: url(https://www.vicsidious.com/molinamarketing/images/raco.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #feature-hubbellinc {
-    background-image: url(https://www.vicsidious.com/vicsidiouswww/molinamarketing/images/hubbellinc.jpg);
+    background-image: url(https://www.vicsidious.com/molinamarketing/images/hubbellinc.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -1274,6 +1285,8 @@ nav ul li {
 }
 
 @media (min-width: 641px) {
+
+
     .features {
         position: relative
     }
@@ -1414,6 +1427,7 @@ nav ul li {
 }
 
 @media (min-width: 641px) {
+
     .pricing .section-square {
         display: none;
         position: absolute;
@@ -1488,17 +1502,16 @@ and (max-device-width : 568px) {
         display: none;
         position: relative;
         padding: 20px 0;
-        height: 200px;
     }
 
     .hero-illustration {
-        background-image: url(https://www.vicsidious.com/vicsidiouswww/molinamarketing/images/mmlogotext2.png), url(https://www.vicsidious.com/vicsidiouswww/molinamarketing/images/mlogo.png);
+        background-image: url(https://www.vicsidious.com/molinamarketing/images/mmlogotext2.png), url(https://www.vicsidious.com/molinamarketing/images/mlogo.png);
         background-size: 60%, contain;
         background-position: center, center;
         height: 40vh;
     }
     .hero {
-        height: 100vh;
+        /* height: 100vh; */
     }
 
     .quienessomos {
@@ -1532,30 +1545,32 @@ and (max-device-width : 568px) {
     .site-header {
         display: block;
         position: relative;
-        padding: 20px 0;
-        height: 160px;
-    }
+        padding: 20px 0 50px;
+    } 
 
     .hero-illustration {
-        background-image: url(https://www.vicsidious.com/vicsidiouswww/molinamarketing/images/mmlogotext2.png), url(https://www.vicsidious.com/vicsidiouswww/molinamarketing/images/mlogo.png);
-        background-size: 60%, contain;
+        background-image: url(https://www.vicsidious.com/molinamarketing/images/mmlogotext2.png), url(https://www.vicsidious.com/molinamarketing/images/mlogo.png);
+        background-size: 60%, contain; 
     }
 }
 
-@media (min-width: 500px) {
+@media (max-width: 800px) {
 
+    .site-header {
+        display: none;
+    }
     .section-inner {
         /* padding-top: 80px; */
         padding-bottom: 80px
     }
 
     .hero-title {
-        text-align: right;
+        text-align: center;
         font-size: 40px;
     }
 
     .hero-paragraph {
-        text-align: right;
+        text-align: center;
         font-size: 15px;
     }
 
@@ -1578,9 +1593,6 @@ and (max-device-width : 568px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 
-    .site-header {
-        display: none;
-    }
 }
 
 
@@ -1645,6 +1657,8 @@ and (max-device-width : 1024px) {
 }
 
 @media (min-width: 641px) {
+
+    
     .site-footer-inner {
         justify-content: space-between
     }
