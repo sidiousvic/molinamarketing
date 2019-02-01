@@ -1465,7 +1465,7 @@ a:hover {
 
 .is-boxed {
     background: linear-gradient(to top right, #121212 0, black 100%);
-    background-image: url(https://images.pexels.com/photos/1376864/pexels-photo-1376864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    /* background-image: url(https://images.pexels.com/photos/1376864/pexels-photo-1376864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1479,7 +1479,7 @@ a:hover {
 }
 
 .boxed-container {
-    max-width: 1440px;
+    max-width: 96vw;
     margin: 0 auto;
     box-shadow: 0 16px 48px #000
 }
